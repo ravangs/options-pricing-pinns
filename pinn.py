@@ -30,7 +30,7 @@ class PhysicsInformedNN:
                 if m.bias is not None:
                     torch.nn.init.zeros_(m.bias)
 
-        self.optimizer = optimizer(self.model.parameters(), lr=0.001)
+        self.optimizer = optimizer(self.model.parameters(), lr=0.00001)
         self.iter = 0
 
     def net_u(self, S, t):
